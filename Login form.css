@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+.container{
+max-width: 440px;
+padding: 0 20px;
+margin: 170px auto;
+}
+
+.wrapper{
+    width: 100%;
+    background-color: black;
+    border-radius:5px ;
+    
+}
+.wrapper .title{
+    line-height: 90px;
+    background: #4caf50;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper form{
+padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    padding-left: 60px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+}
+form .row input:focus{
+border-color:#16a085 ;
+box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+.wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    background: #16a085;
+    color: #fff;
+    font-size: 20px;
+    border:1px solid #16a085 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+
+}
+.wrapper form .button input{
+    padding-left:0px ;
+    background: #4caf50;
+    border: 1px solid #16a085;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.wrapper form .pass{
+    margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+    color: #16a085;
+    text-decoration: none;
+    font-size: 18px;
+}
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+    color: red;
+
+}
+.wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.wrapper form .signup-link a{
+    color: #4caf50;
+    text-decoration: none;
+    
+}
+form .signup-link a:hover{
+    text-decoration: underline;
+    color: white;
+
+}
+form .button input:hover{
+    background: #12876f;
+}
+.row button
+{
+    background-color: #00bcd4;
+}
+
+
+/* Navbar Styling Start */
+
+.header
+{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 25px;
+    height: 60px;
+    align-items:center;
+}
+
+
+.gracious
+{
+    font-size: 35px;
+    font-family:Dancing Script;
+    color: Black;
+    font-weight: 1200px;
+}
+
+.garments
+{
+font-size: 25px;
+font-family: Dancing Script;
+color: #4caf50;
+font-weight: 900px;
+}
+
+
+.search
+{
+    padding-top: 5px;
+}
+
+.search input
+{
+
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+}
+
+.icons
+{
+    text-align: right;
+}
+
+.icons .fa-solid
+
+{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+}
+
+.fa-solid:hover
+{
+    color:   #4caf50;
+}
+
+@media screen and (max-width:576px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width:768px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:992px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
+ 
+  }
+  
+.bottom_nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom_nav li
+{
+    list-style:none;  
+}
+
+.bottom_nav li a
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Young Serif;
+    font-weight: 500;
+    font-size: 22px;
+    transition:0.6s;
+}
+
+.bottom_nav li a:hover
+{
+    color: #4caf50;
+}
+
+
+/* Navbar Styling End */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment From</title>
+</head>
+<body>
+
+     <!--Navbar Start-->
+<div class="header">
+    <div class="logo">
+<span class="gracious">Gracious</span>
+<span class="garments">Garments</span>
+    </div>
+    <div class="search">
+<form>
+    <input type="text" placeholder="Search here....." >
+</form>
+    </div>
+    <div class="icons">
+<a href="#" class="fa-solid fa-heart"></a>
+<a href="#" class="fa-solid fa-shopping-cart"></a>
+<a href="Sign-up.html" class="fa-solid fa-user"></a>
+    </div>
+  </div>
+      <ul class="bottom_nav">
+          <li><a href="Index.html" class="home">Home</a></li>
+          <li><a href="Brands.html" class="brands">Brands</a></li>
+          <li><a href="About-Us.html" class="about-us">About</a></li>
+          <li><a href="contactus.html" class="contact-us">Contact</a></li>
+      </ul>
+   
+    <!--Navbar End-->
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">billing address</h3>
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="address" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="city" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="state" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="123 456" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">payment</h3>
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="easy.png" alt="">
+                        <img src="jazz.png" alt="">
+                        <img src="card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="Card Name" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="january" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2022" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+        </form>
+    </div>    
+</body>
+</html>

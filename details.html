@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="Images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+.cards img{
+
+    margin: 20px 15px;
+}
+
+
+
+     .product{
+        margin-left: 20%;
+
+        
+    
+        
+     }
+
+
+     
+.main span{
+    font-weight: bold;
+    color: green;
+    margin-top: 10%;
+}
+
+.main i{
+
+    font-size: 10px;
+    margin-top: 10%;
+}
+
+.paa{
+
+    margin-top: 10%;
+}
+     
+    
+    .paa a{
+
+        text-decoration: none;
+        font-size: 25px;
+        padding: 5px 50px; 
+        border: 1px solid black;
+        margin-left: 8%;
+        margin-top: 10%;
+        width: 20px;
+        color: black;
+    }
+    .paa i{
+        padding: 9px;
+        font-size: 25px;
+        border: 1px solid black;
+        cursor: pointer;
+        margin-top: 10%;
+    }
+
+    .paa i:hover{
+
+        color: palevioletred;
+        
+        
+    }
+
+    .paa a:hover{
+
+        background-color: black;
+        color: white;
+        height: 50%;
+    }
+
+    .paaa{
+
+    margin-top: 10%;
+    }
+
+    .paaa a{
+        text-decoration: none;
+    
+        padding: 5px 150px;
+font-size: 25px;
+        border: 1px solid black;
+        color: black;
+
+    }
+
+    .paaa a:hover{
+
+        background-color: black;
+        color: white;
+    }
+
+    .accordian {
+/*  padding: 0 20px 0 20px;*/
+  max-width: 560px;
+  width: 130%;
+  margin-top: 15%;
+  position: relative;
+  margin-right: 20%;
+  
+  
+  
+}
+
+.faq {
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 20px;
+  
+}
+
+.faq li {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 15px;
+}
+
+.faq li.active .answer {
+  max-height: 275px!important;
+  padding-bottom: 25px;
+  transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.faq .answer {
+/*  color: #090909;
+  font-family: serif;
+  font-size: 16px;
+  line-height: 24px;*/
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+
+@media screen and (max-width: 500px) {
+  .faq li.active .answer {
+    max-height: 5px!important;
+    padding-bottom: 25px;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+  }
+
+  .faq .answer {
+/*  color: #090909;
+    font-family: serif;
+    font-size: 16px;
+    line-height: 24px;*/
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+  }
+}
+
+
+
+.faq li.active .question {
+  color: #808080;
+  transition: color 0.5s ease;
+}
+
+.faq .plus-minus-toggle {
+  cursor: pointer;
+  height: 19px;
+  position: absolute;
+  width: 19px;
+  left: -40px;
+  top: 45%;
+  z-index: 2;
+}
+
+.faq .plus-minus-toggle:before, .faq .plus-minus-toggle:after {
+  background: #808080;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 19px;
+  transition: background 500ms ease, transform 500ms ease;
+}
+
+.faq .plus-minus-toggle:after {
+  transform-origin: center;
+}
+
+.faq .plus-minus-toggle.collapsed:after {
+  background: rgb(30,34,38);
+  transform: rotate(90deg);
+}
+
+.faq .plus-minus-toggle.collapsed:before {
+  background: rgb(30,34,38);
+  transform: rotate(180deg);
+}
+
+.faq .question {
+/*  color: #090909;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: color 0.5s ease;*/
+  position: relative;
+  cursor: pointer;
+  hyphens: none!important;
+  padding: 10px 0;
+}
+
+
+@media only screen and (max-width:800px){
+    .container{
+        display: inline-block;
+        flex-direction: column;
+        
+    }
+
+    .paaa a{
+        padding: 5px 80px;
+
+    }
+    .paa a{
+        padding: 5px 20px;
+        margin-left: 12%;
+    }
+    input{
+    margin-top: 2%;
+    margin-left: 12%;
+    }
+}
+
+
+    
+    
+</style>
+<body>
+
+   
+    <div class="container">
+    <div class="img">
+        <img src="img1.webp" alt="" id="banner" width="150%" height="80%">
+        <div class="cards">
+            
+            <img  onclick="changeimg('img1.webp')" src="img1.webp" alt="" width="100px" height="150px">
+            <img onclick="changeimg('img2.webp')" src="img2.webp" alt="" width="100px" height="150px">
+         <img onclick="changeimg('img3.webp')" src="img3.webp" alt="" width="100px" height="150x">
+         <img onclick="changeimg('img1.webp')" src="img1.webp" alt="" width="100px" height="150x">
+        </div>
+    </div>
+    <script>
+        function changeimg(filename){
+     let img= document.querySelector('#banner')
+     img.setAttribute('src',filename)
+        }
+    </script>
+    
+
+
+
+        <div class="product" >
+            <div class="main">
+            <h3>Shafaq by Flossie Unstitched 3 Piece Executive Chiffon Vol-07 Collection'2023-FE-702</h3>
+
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+
+
+    <p>Brand:        Flossie</p>
+    <p>SKU:        FE-702</p>
+    <p>Availability:        2 In stock</p>
+    <p>Occasion:       Formals</p>
+    <p>Shirt Fabric:        Emb Chiffon</p>
+    <p>Dupatta Fabric:        Emb Chiffon</p>
+    <p>Miscellaneous:        3 Piece</p>
+
+    <h6 ><del>Rs.22,950.00 PKR </del> <span>Rs. 20,000.00 pkr</span></h6>
+
+<p> color :  sky blue</p>
+
+<input type="Alphabet" placeholder="size">
+
+<input type="number" placeholder="Quantity">
+
+<div class="paa">
+<a href="#">Add to card</a>
+<i class="fa-regular fa-heart"></i>
+</div>
+
+<div class="paaa">
+    <a href="payment.html">Buy Now</a>
+</div>
+
+
+<!--LUMO FAQ Accordian-->
+<div class="accordian">
+    <ul class="faq">
+      <li>
+        <h3 class="question">DELIVERY TIME
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">All Ready to wear outfits will be delivered in 3 to 4 working days.
+
+            All Unstitched outfits will be delivered in 3 to 4 working days.
+            
+            All Bridals and Exclusive Formal would take a minimum of 6-8 weeks for delivery.</div>
+      </li>
+      <li>
+        <h3 class="question">CARE INSTRUCTIONS
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">Dry clean recommended. Do not dry clothes in direct sunlight. Iron the clothes at a moderate temperature. Store the outfit in the garment bag provided.</div>
+      </li>
+      <li>
+        <h3 class="question">DISCLAIMER
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">* The fabric pattern/laces, patchwork, and handmade details may vary!
+            * Length will vary according to the design.
+            * Actual colors of the outfit may vary from the colors being displayed on your device.</div>
+      </li>
+    </ul>
+  </div>
+<script>
+
+$(".faq li .question").click(function() {
+  $(this).find(".plus-minus-toggle").toggleClass("collapsed");
+  $(this).parent().toggleClass("active");
+});
+
+</script>
+
+
+   
+</div>
+    </div>
+           
+        </div>
+        
+    </div>
+    
+
+
+    
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<!-- <link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
+<style>
+	body{
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
+}
+#image{
+line-height:300px;
+    width: 575px;
+height: 300px;
+    border:5px solid black;
+    margin:0 auto;
+	margin-top: 1%;
+background-color: #8e68ff;
+background-image: url('');
+background-repeat: no-repeat;
+
+background-size:cover;
+color:#FFFFFF;
+font-family: sans-serif;
+text-align: center;
+background-size: 100%;
+margin-bottom:25px;
+font-size: 150%;
+}
+.preview{
+    max-width:20%;
+    margin-left:8%;
+border: 10px solid black;
+}
+img{
+    width:95%;
+}
+</style>
+<script>
+function upDate(previewPic){
+ document.getElementById("image").innerHTML=previewPic.alt;
+ var newbg = document.querySelector("#image");
+ var newsrc=previewPic.src;
+ newbg.style.backgroundImage="url("+newsrc+")";
+ //newbg.style.backdropFilter=" blur(7px)";
+// newbg.style.backgroundColor="pink";
+}
+		function unDo(){ 
+    document.getElementById("image").innerHTML= "text chnaged.";
+    var newbg = document.querySelector("#image");
+    newbg.style.backgroundImage="url('')";
+  
+		
+	}
+	// “This” keyword refers to an object that is executing the current piece of code.
+</script>
+</head>
+<body>
+	
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
+	
+<img class = "preview" alt = "Frisbee Player 1" src = "img1.webp" width="50px" height="150px" onmouseover = "upDate(this)" onclick = "unDo()">
+	
+<img class = "preview" alt = "Frisbee Player 2" src = "img2.webp" width="50px" height="150px" onmouseover = "upDate(this)" onclick = "unDo()">
+	
+<img class = "preview" src = "img3.webp" alt = "Frisbee player 3" width="50px" height="150px" onmouseover = "upDate(this)" onclick = "unDo()">
+
+</body>
+</html> -->

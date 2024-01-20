@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><script src="js/owl.carousel.min.js"></script> 
+    <script src="js/functions.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css.">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<style>
+
+    body{
+
+        
+    }
+    .container{
+        padding: 60px;
+        outline: none;
+        outline-offset: none;
+    }
+.box{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
+}
+.box input{
+    margin: 10px 0;
+    outline: none;
+    outline-offset: none;
+    width: 400px;
+}
+.container h1{
+    text-align: center;
+}
+.buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button:hover{
+
+    color:wheat;
+    background-color: #4caf50; 
+}
+.gender {
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.box input{
+
+    border: none;
+    border-bottom: 1px solid;
+
+    mix-blend-mode: multiply;
+    
+
+
+    
+
+}
+
+.box input::placeholder{
+
+color: rgb(19, 4, 4,0.6);
+
+}
+
+
+.box input:hover{
+    
+    box-shadow: none;
+}
+
+.box ::-webkit-input-placeholder{
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+
+    width: 10%;
+    height: 30px;
+    
+    color:white;
+    font-size: 15px;
+    box-shadow: 1px 1px 5px black;
+    background-color: #4caf50;
+
+
+
+}
+
+.for{
+    display: flex;
+    justify-content:center;
+    margin-right: 25%;
+}
+
+.for p{
+
+    font-size: 15px ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box i{
+
+    position: absolute;
+    float: right;
+    margin-left: 28%;
+    margin-top: 1.3%;
+    font-size: 25px;
+    
+}
+
+
+.i{
+
+    display: flex;
+    justify-content: center;
+}
+
+.i i{
+
+    font-size: 150px;
+    
+}
+
+.link{
+
+    display: flex;
+    justify-content: center;
+}
+
+.link span{
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.link a{
+    text-decoration: none;
+
+    padding: 5px;
+    
+    color:black;
+}
+
+.link a:hover{
+ background-color:#4caf50;
+ border: 1px solid black;
+}
+
+#btn
+{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar Styling Start */
+
+.header
+{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 25px;
+    height: 60px;
+    align-items:center;
+}
+
+
+.gracious
+{
+    font-size: 35px;
+    font-family:Dancing Script;
+    color: Black;
+    font-weight: 1200px;
+}
+
+.garments
+{
+font-size: 25px;
+font-family: Dancing Script;
+color: #4caf50;
+font-weight: 900px;
+}
+
+
+.search
+{
+    padding-top: 5px;
+}
+
+.search input
+{
+
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+}
+
+.icons
+{
+    text-align: right;
+}
+
+.icons .fa-solid
+
+{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+}
+
+.fa-solid:hover
+{
+    color:   #4caf50;
+}
+
+@media screen and (max-width:576px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width:768px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:992px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
+ 
+  }
+  
+.bottom_nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom_nav li
+{
+    list-style:none;  
+}
+
+.bottom_nav li a
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Young Serif;
+    font-weight: 500;
+    font-size: 22px;
+    transition:0.6s;
+}
+
+.bottom_nav li a:hover
+{
+    color: #4caf50;
+}
+
+
+/* Navbar Styling End */
+
+
+
+</style>
+<body>
+          <!--Navbar Start-->
+<div class="header">
+    <div class="logo">
+<span class="gracious">Gracious</span>
+<span class="garments">Garments</span>
+    </div>
+    <div class="search">
+<form>
+    <input type="text" placeholder="Search here....." >
+</form>
+    </div>
+    <div class="icons">
+<a href="#" class="fa-solid fa-heart"></a>
+<a href="#" class="fa-solid fa-shopping-cart"></a>
+<a href="Sign-up.html" class="fa-solid fa-user"></a>
+    </div>
+  </div>
+      <ul class="bottom_nav">
+          <li><a href="Index.html" class="home">Home</a></li>
+          <li><a href="Brands.html" class="brands">Brands</a></li>
+          <li><a href="About-Us.html" class="about-us">About</a></li>
+          <li><a href="contactus.html" class="contact-us">Contact</a></li>
+      </ul>
+   
+    <!--Navbar End-->
+<fieldset>
+
+    <div class="container">
+        <div class="content">
+
+
+    <form>
+    <div class="i">
+        <i class="fa-solid fa-circle-user" style="color: #4caf50;"></i>
+</div>
+
+   
+
+
+
+<div class="box">
+        <input type="text" placeholder="User name">
+        <i class="fa-solid fa-user" style="color:black;"></i>
+
+        
+        <br><br><br>
+    </div>
+
+    <div class="box">
+        <input type="password" placeholder="password">
+        <i class="fa-solid fa-lock" style="color:black;"></i>
+        <br><br><br>
+    </div>
+
+
+<div class="box">
+        <input type="email" placeholder="Email address">
+        <i class="fa-solid fa-envelope" style="color:black;"></i>
+        <br><br><br>
+    </div>
+<div class="box">
+        <input type="number" placeholder="phone number">
+        <i class="fa-solid fa-phone" style="color:black;"></i>
+
+        <br><br><br>
+    </div>
+
+    <div class="box">
+        <input type="password" placeholder="confirm password">
+        <i class="fa-solid fa-lock" style="color:black;"></i>
+        <br><br><br>
+    </div>
+
+   
+    </div>
+<!-- <div class="gender">
+
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="gender">other</label>
+        <input type="radio" name="gender" id="other"><br><br><br>
+        
+    </div> -->
+
+    <div class="for">
+
+        <p>forget account</p>
+    </div>
+    <div class="button">
+
+
+              
+        <button type="submit"><a id="btn" href="Login form.html">Log In</a></button>
+    </div>
+    
+    
+
+
+
+    </form>
+</div>
+</fieldset>
+
+
+<!-- <fieldset>    <form>
+        <legend>input types</legend>
+        <label for="name">first name</label>
+        <input type="text" name="name" id="name"  placeholder="enter your names">
+        <label for="father name">last name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your last name"> 
+        <label for="nickname">nickname?</label>
+        <input id="yesnick" type="checkbox" value="yes" onchange="nicknamefunction()"/>
+        <div id="nick" style="display:none;">
+        <label for="nickname"nickname>nickname</label>
+        <input type="text" name="nickname" id="nickname">
+    </div>
+        <input type="submit" value="verify"/> 
+        
+    </form>
+</fieldset>
+<script src="nickfunction.js"></script> -->
+    
+</body>
+</html>

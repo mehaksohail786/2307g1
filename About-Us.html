@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <link rel="icon" href="Images/logo.png">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><script src="js/owl.carousel.min.js"></script> 
+  <script src="js/functions.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css.">
+    <title>Document</title>
+    <style>
+/* Navbar Styling Start */
+
+.header
+{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 25px;
+    height: 60px;
+    align-items:center;
+}
+
+
+.gracious
+{
+    font-size: 35px;
+    font-family:Dancing Script;
+    color: Black;
+    font-weight: 1200px;
+}
+
+.garments
+{
+font-size: 25px;
+font-family: Dancing Script;
+color: #4caf50;
+font-weight: 900px;
+}
+
+
+.search
+{
+    padding-top: 5px;
+}
+
+.search input
+{
+
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+}
+
+.icons
+{
+    text-align: right;
+}
+
+.icons .fa-solid
+
+{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+}
+
+.fa-solid:hover
+{
+    color:   #4caf50;
+}
+
+@media screen and (max-width:576px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width:768px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:992px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
+ 
+  }
+  
+.bottom_nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom_nav li
+{
+    list-style:none;  
+}
+
+.bottom_nav li a
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: Young Serif;
+    font-size: 22px;
+    transition:0.6s;
+}
+
+.bottom_nav li a:hover
+{
+    color: #4caf50;
+}
+
+
+
+/* Navbar Styling End */
+
+/* About us styling start */
+.heading
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h2
+{
+  font-family: Croissant One;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+
+.heading h2::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+
+
+
+.heading
+{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading h1
+{
+  font-family: Croissant One;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.heading h1::after
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+
+.heading p
+{
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.container
+{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.about
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.about-image
+{
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+.about-image img
+{
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.about-image img:hover
+{
+  transform: scale(1.1);
+}
+
+.about-content
+{
+  flex: 1;
+}
+
+.about-content .heading-6
+{
+  font-family:Pacifico;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content .heading-6:hover
+{
+
+  color: rgb(12, 89, 114);
+}
+
+.about-content .para-5
+{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.about-content .read-more
+{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #4caf50;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.about-content .read-more:hover
+{
+  background-color: #3e8e41;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .heading{
+      padding: 0px 20px;
+  }
+  .heading h1{
+      font-size: 36px;
+  }
+  .heading p{
+      font-size: 17px;
+      margin-bottom: 0px;
+  }
+  .container{
+      padding: 0px;
+
+  }
+  .about{
+      padding: 20px;
+      flex-direction: column;
+
+  }
+  .about-image{
+      margin-right: 0px;
+      margin-bottom: 20px;
+  }
+  .about-content p{
+      padding: 0px;
+      font-size: 16px;
+
+  }
+  .about-content .read-more{
+      font-size: 16px;
+  }
+}
+
+
+
+
+/*About Us Styling End*/ 
+
+
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'IBM Plex Serif',Serif;
+      }
+    
+      .heading-2
+{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading-2 h1
+{
+  font-family: Croissant One;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.heading-2 h1::after
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+
+.wrapper .title{
+    text-align: center;
+}
+
+.title h4{
+    display: inline-block;
+    padding: 20px;
+    color: #585757;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.wrapper .card_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card_Container #card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(67, 52, 109, .6);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card .imbBx, .imbBx img{
+    width: 100%;
+    height: 100%;
+}
+
+#card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+#card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+#card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.sci i
+{
+  padding-right: 20px;
+}
+
+.content .sci li a{
+    color: #fff;
+    font-size: 24px;
+}
+
+
+
+      </style>
+</head>
+<body>
+
+   <!--Navbar Start-->
+<div class="header">
+  <div class="logo">
+<span class="gracious">Gracious</span>
+<span class="garments">Garments</span>
+  </div>
+  <div class="search">
+<form>
+  <input type="text" placeholder="Search here....." >
+</form>
+  </div>
+  <div class="icons">
+<a href="#" class="fa-solid fa-heart"></a>
+<a href="#" class="fa-solid fa-shopping-cart"></a>
+<a href="#" class="fa-solid fa-user"></a>
+  </div>
+</div>
+    <ul class="bottom_nav">
+        <li><a href="Index.html" class="home">Home</a></li>
+        <li><a href="Brands.html" class="brands">Brands</a></li>
+        <li><a href="About-Us.html" class="about-us">About</a></li>
+        <li><a href="contactus.html" class="contact-us">Contact</a></li>
+    </ul>
+  <!--Navbar End-->
+
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>Gracious Garments was founded 2023 with a simple yet ambitious goal: to provide our customers with exceptional clothing that suits their unique tastes and lifestyles. Over the years, our commitment to this goal has enabled us to grow and establish ourselves as a trusted brand in the fashion world.
+            </p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="shalwar qameez Images/img14.webp" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading-6">Luxuries Of Fashion Begins From Here...</h2>
+                <p class="para-5">Welcome to Gracious Garments! We are passionate about fashion, quality, and style. Our journey began with a vision to create garments that not only make you look good but feel good as well. As a leading name in the fashion industry, we take pride in offering a wide range of clothing that reflects the latest trends while emphasizing comfort and durability.</p>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="heading">
+      <h1>OUR TEAM</h1>
+    <div class="wrapper">
+
+        <div class="card_Container">
+
+            <div id="card">
+
+                <div class="imbBx">
+                    <img src="Images/Aitesam1.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Aitesam Hussain Siddiqui <br><span>Front-End Web Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="https://instagram.com/aitesamhussain1?igshid=YWYwM2I1ZDdmOQ=="><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="https://www.facebook.com/profile.php?id=100090510281434"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="https://twitter.com/AitesamSid78261"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="card">
+
+                <div class="imbBx">
+                    <img src="Images/Ghanat.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Muhammad Ghanat<br><span>UI/UX Designer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="https://instagram.com/muhammadghanat?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="https://www.facebook.com/profile.php?id=100094343162416&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="https://twitter.com/MuhmuadG71772"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="card">
+
+
+                <div class="imbBx">
+                    <img src="Images/Zayan.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Zayan Nouman<br><span>Back-End Web Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="https://instagram.com/muhammadzayan7766"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="https://www.facebook.com/profile.php?id=muhammad zayan"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="card">
+
+                <div class="imbBx">
+                    <img src="Images/Muhammad Bilal.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Sheikh Bilal<br><span>Graphic Designer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+              </div>
+
+              <div id="card">
+
+                <div class="imbBx">
+                    <img src="Images/Nouman.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Nouman<br><span>Documentation</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+              </div>
+
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
+    <script>
+
+    </script>
+
+    <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="Index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Garments</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><script src="js/owl.carousel.min.js"></script> 
+    <script src="js/functions.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css.">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    /* Navbar Styling Start */
+
+.header
+{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 25px;
+    height: 60px;
+    align-items:center;
+}
+
+
+.gracious
+{
+    font-size: 35px;
+    font-family:Dancing Script;
+    color: Black;
+}
+
+.garments
+{
+font-size: 22px;
+font-family:Dancing Script;
+color: #4caf50;
+font-weight: bold;
+}
+
+.search
+{
+    padding-top: 5px;
+}
+
+.search input
+{
+
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+}
+
+.icons
+{
+    text-align: right;
+}
+
+.icons .fa-solid
+
+{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    transition: 0.6s;
+}
+
+.fa-solid:hover
+{
+    color:   #4caf50;
+}
+
+@media screen and (max-width:576px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width:768px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:992px)
+{
+    .header
+    {
+        grid-template-columns: auto auto;
+        padding: 10px 5px;
+        height: auto;
+    }
+
+    .logo
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .search
+    {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+
+    .icons .fa-solid
+    {
+        padding: 10px;
+    }
+
+    .bottom_nav li a
+    {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
+ 
+  }
+  
+.bottom_nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom_nav li
+{
+    list-style:none;  
+}
+
+.bottom_nav li a
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    transition:0.6s;
+}
+
+.bottom_nav li a:hover
+{
+    color: #4caf50;
+}
+
+
+/* Navbar Styling End */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+
+body {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #4caf50;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion .icon {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px 7px #4caf50;
+  border-radius: 50%;
+  float: left;
+  transition: all 0.5s ease-in;
+}
+
+.accordion h5 {
+  font-size: 26px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: black;
+}
+
+.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.active .icon {
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px -25px #fff;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid #4caf50;
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}
+
+.panel p
+{
+    font-size: 20px;
+}
+
+.head
+{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.head h1
+{
+  font-family: Croissant One;
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.head h1::after
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+
+
+
+
+
+          /* footer styling start */
+
+          .footer
+{
+  background-color: #eef8ff;
+}
+
+
+
+footer
+{
+  width: 100%;
+  bottom: 0;
+  background: rgb(70, 70, 70, 0.7);
+  color: #fff;
+  padding: 100px 30px 0px;
+  border-top-left-radius: 125px ;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row
+{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
+.col
+{
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col :nth-child(2) ,.col :nth-child(3) 
+{
+  flex-basis: 15%;
+
+}
+
+
+.col h3
+{
+  width: fit-content;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.email-Id
+{
+  width: fit-content;
+  color: white;
+  margin: 20px 0px;
+}
+
+ul li
+{
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+
+ul li a
+{
+  line-height: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+#Footer-form 
+{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1px solid #ccc;
+  margin-bottom: 50px;
+  
+}
+
+#Footer-form ::-webkit-input-placeholder
+{
+    color: black;
+}
+
+
+form .fa-regular
+{
+  font-size: 18px;
+  margin-right: 10px;
+
+}
+
+form .searchbar
+{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  outline: none;
+
+
+}
+
+form button 
+{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-arrow-right
+{
+  font-size: 16px;
+  color:#ccc;
+}
+
+#Para
+{
+    color: white;
+}
+
+.socialmedia-icons .fa-brands
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#Link
+{
+    padding-left: 30px;
+}
+
+.underline-3
+{
+  margin-left: 30px;
+  margin-top: 8px;
+  width: 70%;
+  height: 5px;
+  background-color: rgb(56, 56, 56);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.underline-3 span
+{
+  width: 15px;
+  height: 100%;
+  background: #4caf50;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving-2 2s linear infinite;
+}
+
+@keyframes moving-2 {
+    0%
+    {
+      left: -20px;
+    }
+    100%
+    {
+      left: 100%;
+    }
+  
+  }
+
+
+.socialmedia-icons li
+{
+    list-style: none;
+    display: inline;
+}
+
+#footer-hr
+{
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+
+}
+
+#para-1
+{
+    color: white;
+}
+
+
+.copyright
+{
+  font-size: 18px;
+  text-align: center;
+  color:  black;
+  font-weight: 700;
+}
+
+.underline
+{
+  margin-top: 8px;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(56, 56, 56);
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.underline span
+{
+  width: 15px;
+  height: 100%;
+  background: #4caf50;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0%
+  {
+    left: -20px;
+  }
+  100%
+  {
+    left: 100%;
+  }
+
+}
+
+
+
+@media (max-width:700px)
+{
+  footer
+  {
+    bottom: unset;
+  }
+
+  .col
+  {
+    flex-basis: 100%;
+  }
+  
+  .col :nth-child(2) ,.col :nth-child(3) 
+  {
+    flex-basis: 15%;
+  
+  }
+} 
+
+@media (max-width:500px)
+{
+    .footer-logo
+    {
+      margin-bottom: 10px;
+    }
+}
+
+/* footer styling End */
+</style>
+
+  <body>
+
+
+ <!--Navbar Start-->
+ <div class="header">
+  <div class="logo">
+<span class="gracious">Gracious</span>
+<span class="garments">Garments</span>
+  </div>
+  <div class="search">
+<form>
+  <input type="text" placeholder="Search here....." >
+</form>
+  </div>
+  <div class="icons">
+<a href="#" class="fa-solid fa-heart"></a>
+<a href="#" class="fa-solid fa-shopping-cart"></a>
+<a href="#" class="fa-solid fa-user"></a>
+  </div>
+</div>
+    <ul class="bottom_nav">
+        <li><a href="Index.html" class="home">Home</a></li>
+        <li><a href="Brands.html" class="brands">Brands</a></li>
+        <li><a href="About-Us.html" class="about-us">About</a></li>
+        <li><a href="contactus.html" class="contact-us">Contact</a></li>
+    </ul>
+
+  <!--Navbar End-->
+
+
+  <!--Faqs Start-->
+<!--LUMO FAQ Accordian-->
+
+<div class="head">
+    <h1>FAQ'S
+    </h1>
+  </div>
+
+    <div class="accordion">
+      <div class="icon"></div>
+      <h5>What is Gracious Garments and what do they sell?</h5>
+    </div>
+    <div class="panel">
+      <p>
+        Gracious Garments is a clothing company specializing in a wide range of dresses for various occasions, including formal wear, casual dresses, and more for mens and womens.
+
+      </p>
+    </div>
+  
+    <div class="accordion">
+      <div class="icon"></div>
+      <h5>Do they offer international shipping?</h5>
+    </div>
+    <div class="panel">
+      <p>
+        Yes, Gracious Garments provides international shipping options for customers worldwide.
+      </p>
+    </div>
+  
+    <div class="accordion">
+      <div class="icon"></div>
+      <h5>Can I return or exchange a dress if it doesn't fit properly?</h5>
+    </div>
+    <div class="panel">
+      <p>
+        Yes, we have a hassle-free return and exchange policy. Please check our website for specific details on our return process.
+      </p>
+    </div>
+  
+    <div class="accordion">
+      <div class="icon"></div>
+      <h5>What sizes are available for their dresses?</h5>
+    </div>
+    <div class="panel">
+      <p>
+        Our dresses are available in a range of sizes, from XS to XXXL, to cater to a diverse customer base.</div>
+      </li>
+      </p>
+    </div>
+  </div>
+
+    
+  <div class="accordion">
+    <div class="icon"></div>
+    <h5>What is the average shipping time for domestic orders?</h5>
+  </div>
+  <div class="panel">
+    <p>
+        Domestic shipping typically takes 3-5 working days, but it may vary depending on your location and the shipping method chosen.</div>
+    </li>
+    </p>
+  </div>
+</div>
+
+<div class="accordion">
+    <div class="icon"></div>
+    <h5>Do they have a physical store, or is it an online-only business?</h5>
+  </div>
+  <div class="panel">
+    <p>
+        Gracious Garments is primarily an online store, but we may occasionally have pop-up shops or showrooms for specific events.
+
+    </p>
+  </div>
+
+  <div class="accordion">
+    <div class="icon"></div>
+    <h5>Are the dresses machine-washable, or do they require special care?</h5>
+  </div>
+  <div class="panel">
+    <p>
+        Care instructions for each dress are provided on the product page. Some dresses may require special care, while others are machine-washable.
+    </p>
+  </div>
+
+  <div class="accordion">
+    <div class="icon"></div>
+    <h5>What is Gracious Garments' price range for dresses?</h5>
+  </div>
+  <div class="panel">
+    <p>
+        Our dress prices vary depending on the style, material, and design. You can find dresses in a wide price range to suit different budgets.
+    </p>
+  </div>
+
+  <div class="accordion">
+    <div class="icon"></div>
+    <h5>What payment methods do they accept?</h5>
+  </div>
+  <div class="panel">
+    <p>
+        We accept major credit and debit cards, as well as various online payment methods such </div>
+    </li>
+    </p>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="icon"></div>
+  <h5>What is the return policy for sale items?</h5>
+</div>
+<div class="panel">
+  <p>
+    Sale items are subject to the same return policy as regular items. Please refer to our return policy for details.</div>
+  </li>
+  </p>
+</div>
+</div>
+
+<!--Footer Start-->
+<section class="footer">
+  <footer>
+      <div class="row">
+          <div class="col">
+               <div class="footer-logo"> 
+                      <span class="gracious">Gracious
+                          <span class="garments">Garments
+                      </span>
+                          </span>
+              </div>
+              <p id="Para">To be the most preferred choice in the market we practice to never negotiate quality grounds. Quality product is our specialty and we aim to provide best solutions to our clients.
+              </p>
+          </div>
+          <div class="col">
+              <h3 id="head">Office <div class="underline"><span></span></div></h3>
+              <p id="para-1">A 563, Main Shahrah-e-Usman</p>
+              <p id="para-1">Karachi,Pakistan</p>
+              <p class="email-Id">Graciousgarment2023@gmail.com</p>
+              <h4>021-03462327</h4>
+          </div>
+          <div class="col">
+              <h3 id="Link">Links <div class="underline-3"><span></span></div></h3>
+              <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="Brands.html">Brands</a></li>
+              <li><a href="About-Us.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="#">FAQS</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+           <div class="col">
+              <h3>Newsletter <div class="underline"><span></span></div></h3>
+              <form id="Footer-form">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" class="searchbar" placeholder="enter your e-mail here" required style="width: 150px;">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <div class="socialmedia-icons">
+                  <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+              </div>
+          </div>
+      </div>
+      <hr id="footer-hr">
+      <p class="copyright">Gracious Garmnets © 2023 - All Rights Reserved</p>
+  </footer>
+  </section>
+
+<!--Footer End-->
+
+  
+
+
+
+  <!--Faqs End-->
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"/></script> 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+var len = acc.length;
+for (i = 0; i < len; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+</script>
+  </body>
+  </html>
